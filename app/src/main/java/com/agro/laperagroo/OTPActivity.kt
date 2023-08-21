@@ -1,4 +1,4 @@
-package com.agro.agrolap.Auth
+package com.agro.laperagroo
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,15 +10,12 @@ import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import com.agro.agrolap.MainActivity
-import com.agro.agrolap.R
 import com.google.firebase.FirebaseException
 import com.google.firebase.FirebaseTooManyRequestsException
 import com.google.firebase.auth.*
 import java.util.concurrent.TimeUnit
 
 class OTPActivity : AppCompatActivity() {
-
     private lateinit var auth: FirebaseAuth
     private lateinit var verifyBtn: Button
     private lateinit var resendTV: TextView

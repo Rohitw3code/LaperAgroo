@@ -1,4 +1,5 @@
-package com.agro.agrolap.Auth
+package com.agro.laperagroo
+
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,14 +10,12 @@ import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.agro.agrolap.MainActivity
-import com.agro.agrolap.R
 import com.google.firebase.FirebaseException
 import com.google.firebase.FirebaseTooManyRequestsException
 import com.google.firebase.auth.*
 import java.util.concurrent.TimeUnit
 
-class AuthActivity : AppCompatActivity() {
+class PhoneActivity : AppCompatActivity() {
     private lateinit var sendOTPBtn : Button
     private lateinit var phoneNumberET : EditText
     private lateinit var auth : FirebaseAuth
@@ -25,7 +24,9 @@ class AuthActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_auth)
+        setContentView(R.layout.activity_phone)
+
+        auth = FirebaseAuth.getInstance()
 
         init()
         sendOTPBtn.setOnClickListener {
@@ -82,6 +83,8 @@ class AuthActivity : AppCompatActivity() {
     private fun sendToMain(){
         startActivity(Intent(this , MainActivity::class.java))
     }
+
+
     private val callbacks = object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
 
         override fun onVerificationCompleted(credential: PhoneAuthCredential) {
@@ -117,7 +120,7 @@ class AuthActivity : AppCompatActivity() {
             // now need to ask the user to enter the code and then construct a credential
             // by combining the code with a verification ID.
             // Save verification ID and resending token so we can use them later
-            val intent = Intent(this@AuthActivity , OTPActivity::class.java)
+            val intent = Intent(this@PhoneActivity , OTPActivity::class.java)
             intent.putExtra("OTP" , verificationId)
             intent.putExtra("resendToken" , token)
             intent.putExtra("phoneNumber" , number)

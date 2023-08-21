@@ -9,14 +9,15 @@
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AgroLap"
+        android:theme="@style/Theme.LaperAgroo"
         tools:targetApi="31">
         <activity
-            android:name=".Auth.OTPActivity"
-            android:exported="false" />
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_bottom" />
         <activity
-            android:name=".Auth.AuthActivity"
-            android:exported="true" >
+            android:name=".PhoneActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,9 +25,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:name=".OTPActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

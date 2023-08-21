@@ -1,4 +1,4 @@
-package com.agro.agrolap
+package com.agro.laperagroo
 
 import org.junit.Test
 

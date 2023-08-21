@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "37466381272",
+    "project_id": "agrolap-1ecb5",
+    "storage_bucket": "agrolap-1ecb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37466381272:android:f57b15de8398928186b0ad",
+        "android_client_info": {
+          "package_name": "com.agro.agrolap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37466381272-ocb6obcgcp1007ig8qqqqpibn3akst73.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeFuZm56Nqs0ZbKQJ4FnpMuJJgGD1B_lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37466381272-ocb6obcgcp1007ig8qqqqpibn3akst73.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37466381272:android:4fcc13e45345600686b0ad",
+        "android_client_info": {
+          "package_name": "com.agro.laperagroo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37466381272-ocb6obcgcp1007ig8qqqqpibn3akst73.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeFuZm56Nqs0ZbKQJ4FnpMuJJgGD1B_lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37466381272-ocb6obcgcp1007ig8qqqqpibn3akst73.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
